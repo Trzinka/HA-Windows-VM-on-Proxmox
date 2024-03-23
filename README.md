@@ -1,4 +1,4 @@
-A prerequisite:
+## A minimal prerequisite:
 ```
 USB key
 Personal computer with a:
