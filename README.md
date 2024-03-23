@@ -63,3 +63,21 @@ Check & `note down details` about physical disks we want to passthrough, using f
 
 You should see something like this (including the other disks), which are not shown in the picture for better inspection:
 ![Proxmox-Disk list](https://github.com/Trzinka/HA-Windows-VM-on-Proxmox/assets/40424965/5f5a2c79-d500-4037-ad0f-74f5667f091c)
+
+We should use disk by `their ID` rather than "im my case" `name (/dev/sda) or (/dev/sda)` which can change and will cause trouble!
+
+So use following command to list all physical disk IDs `ls -l /dev/disk/by-id/`
+
+Now we need to find the one that matches the “product” or “serial”:
+
+`..... /dev/disk/by-id/ata-xxxxxxxxx-xxxxx_xxx ......`
+
+or try
+
+ls -al /dev/disk/by-id | grep ZPW0D8N3 the `ZPW0D8N3` as you can see is serial from the disk from the above printout.
+
+You should see something like this:
+![Proxmox-Disk byID](https://github.com/Trzinka/HA-Windows-VM-on-Proxmox/assets/40424965/c20931d1-fea1-4365-943f-707d1ba69f88)
+
+
+*Add the disk to VM*
