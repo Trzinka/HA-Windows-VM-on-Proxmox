@@ -52,3 +52,14 @@ Watch the video: https://youtu.be/eyNlGAzf-L4
 
 ### Adding a physical drive to a Windows VM in Proxmox that already contains data (formatted in FAT or NTFS)!
 
+Graphical view of the available disks of which 2 are already used (proxmox & HAOS) and 2 disks we want to add!
+![Proxmox-Add disk2](https://github.com/Trzinka/HA-Windows-VM-on-Proxmox/assets/40424965/10d177ed-2116-48c7-90e0-66392bbf270f)
+
+
+Click on `pev` and select `Shell` and copy  `apt install lshw` and press enter to install
+![Proxmox-PEV Shell](https://github.com/Trzinka/HA-Windows-VM-on-Proxmox/assets/40424965/1ee419a0-4e55-482a-8a6e-8bb803db0d5c)
+
+Check & `note down details` about physical disks we want to passthrough, using following command `lshw -class disk -class storage`
+
+You should see something like this (including the other disks), which are not shown in the picture for better inspection:
+![Proxmox-Disk list](https://github.com/Trzinka/HA-Windows-VM-on-Proxmox/assets/40424965/5f5a2c79-d500-4037-ad0f-74f5667f091c)
