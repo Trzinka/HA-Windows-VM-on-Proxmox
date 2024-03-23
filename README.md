@@ -84,5 +84,14 @@ You should see something like this:
 
 Execute following command `qm set 101 -scsi0 /dev/disk/by-id/ata-xxxxxxxxx-xxxxx_xxx` where `101` in my case is Windows VM nimber, `-scsi0` is number of virtual scsi controler (if you add more disk change `-scsi1`) and `ata-xxxxxxxxx-xxxxx_xxx` is disk ID you geted.
 
-Example:
-![Proxmox-Windows VM](https://github.com/Trzinka/HA-Windows-VM-on-Proxmox/assets/40424965/7ad5972d-6236-42c8-b90a-6d33dc162d1b)
+You should see this:
+update VM 101: -scsi0 /dev/disk/by-id/ata-xxxxxxxxx-xxxxx_xxx
+
+## Sedaj je potrebno še dodati disk v VM (v mojem primeru Windos)
+
+Select VM (in my case 101 Windows), then Hardware click on ADD in Bus/Device select SCSI and under Storage the disk we added.
+![Proxmox-Add disk to VM](https://github.com/Trzinka/HA-Windows-VM-on-Proxmox/assets/40424965/bf3cc2d3-370e-427c-89af-4c00065c8394)
+
+
+
+
