@@ -28,24 +28,27 @@ You will also need a program for writing to a USB key: https://etcher.balena.io/
 
 **********************************************************************************************************************************
 
-Install proxmox!
+### Install proxmox!
+
 Watch the video: https://www.youtube.com/watch?v=42gopfIrPBY
 
 ```To install Home assistant, see the video below.```
 
 **********************************************************************************************************************************
 
-Install Home Assitant OS. `Preferably on a separate disk, it can be installed on the disk on which Proxmox is installed.`
+### Install Home Assitant OS. `Preferably on a separate disk, it can be installed on the disk on which Proxmox is installed.`
+
 To install on a Proxmox machine use this link: https://www.home-assistant.io/installation/alternative
 
 Watch the video: https://youtu.be/Bw6O4BNhmbY
 
 **********************************************************************************************************************************
 
-Instal Windows. `Preferably on a separate disk that does not have Proxmox or HAOS installed.`
+### Instal Windows. `Preferably on a separate disk that does not have Proxmox or HAOS installed.`
+
 Watch the video: https://youtu.be/eyNlGAzf-L4
 
 **********************************************************************************************************************************
 
-Adding a physical drive to a Windows VM in Proxmox that already contains data (formatted in FAT or NTFS)!
+### Adding a physical drive to a Windows VM in Proxmox that already contains data (formatted in FAT or NTFS)!
 
